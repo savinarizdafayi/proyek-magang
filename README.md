@@ -1,7 +1,7 @@
 ## 🛠 Instalasi dan Menjalankan Proyek
 
 1. Clone repository:
-   git clone https://github.com/username/proyek-magang.git
+   git clone https://github.com/savinarizdafayi/proyek-magang.git
    
 2. Masuk ke folder proyek:
    cd proyek-magang/web-app
