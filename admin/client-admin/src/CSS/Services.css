@@ -1,0 +1,54 @@
+/* Services Section */
+.services-section {
+  padding: 40px 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family:"crimson text";
+}
+
+.service-item {
+  margin-bottom: 40px;
+  padding: 10px;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.service-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.service-title {
+  font-size: 1.5rem;
+  color: #133e87;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.content-wrapper {
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* Styling gambar pada setiap layanan */
+.service-image {
+  width: 100%; /* Lebar gambar mengikuti lebar kontainer */
+  max-width: 800px; /* Maksimal lebar gambar, sesuaikan sesuai kebutuhan */
+  height: 300px; /* Menetapkan tinggi gambar agar konsisten */
+  overflow: hidden; /* Menyembunyikan bagian gambar yang melampaui batas */
+  display: flex;
+  justify-content: center; /* Agar gambar tetap berada di tengah */
+  align-items: center; /* Menjaga gambar tetap di tengah vertikal */
+}
+
+/* Styling gambar di dalam kontainer gambar */
+.service-image img {
+  width: 100%; /* Gambar mengikuti lebar kontainer */
+  height: 100%; /* Gambar mengikuti tinggi kontainer */
+  object-fit: cover; /* Menjaga proporsi gambar dan meng-crop sesuai ukuran kontainer */
+  border-radius: 8px; /* Membuat sudut gambar menjadi melengkung */
+}
+

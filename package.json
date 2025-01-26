@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "concurrently \"npm run start-admin\" \"npm run start-server-admin\" \"npm run start-server\" \"npm run start-client\"",
-    "start-admin": "cd admin/web-app && npm start",
+    "start-admin": "cd admin/client-admin && npm start",
     "start-server-admin": "cd admin/server-admin && npm start",
     "start-server": "cd server && npm start",
     "start-client": "cd client && npm start"

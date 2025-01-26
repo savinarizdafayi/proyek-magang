@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+/* Parent container */
+.page-container {
+  display: flex;
+  flex-direction: column;
+}
+
+  /* Konten utama fleksibel */
+.main-content {
+  padding-top: 52px;
+  flex: 1 !important; /* Membuat konten utama mengisi ruang di atas footer */
+  padding: 0px;
+
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Layar penuh */
+}
+
+/* WHY US */
+.why-us-section {
+  background-color: white;
+  padding: 50px 50px; /* Hapus margin horizontal */
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  white-space: nowrap; /* Membuat teks tidak memotong ke baris baru */
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Menambah jarak antar item */
+}
+
+.point {
+  display: flex;
+  align-items: left;
+  position: relative;
+}
+
+.bar {
+  width: 50px;
+  height: 20px;
+  background-color: #003366;
+  margin-right: 20px;
+  flex-shrink: 0;
+  margin-left: 0; /* Hapus margin kiri */
+}
+
+.text {
+  margin-top: 5px;
+}
+
+.text h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.4; /* Paksa teks tetap pada satu baris */
+}
+
+.text p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.point:nth-child(2) {
+  margin-left: 40px; /* Offset untuk membuat model tangga */
+}
+
+.point:nth-child(3) {
+  margin-left: 80px; /* Offset lebih jauh untuk model tangga */
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Khusus untuk halaman dashboard */
+.dashboard-container {
+  padding-top: 0 !important; /* Hapus jarak dengan atas */
+  margin-top: 0 !important; /* Hapus margin atas */
+}

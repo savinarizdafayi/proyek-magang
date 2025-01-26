@@ -1,0 +1,95 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Container */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 0;
+  margin: 150px 0 150px 0;
+}
+
+/* Each Section */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.about-section:nth-child(odd) .content {
+  flex-direction: row-reverse; /* Balik arah untuk section ganjil */
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
+
+/* Text Styling */
+.text {
+  flex: 1;
+  max-width: 65%; /* Maksimal 50% lebar teks */
+}
+
+.text h2 {
+  font-family: crimson text;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.text p {
+  font-family: alice;
+  font-size: 18px;
+  color: #555;
+  text-align: justify;
+}
+
+/* Image Styling */
+.image {
+  flex: 1;
+  max-width: 35%;
+  overflow: hidden; /* Potong area gambar yang berlebih */
+}
+
+.about-image {
+  width: 100%; /* Lebar penuh */
+  height: 200px; /* Atur tinggi gambar */
+  object-fit: cover; /* Crop gambar menjadi persegi panjang horizontal */
+  border-radius: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+  }
+
+  .content {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .text,
+  .image {
+    max-width: 100%;
+  }
+}

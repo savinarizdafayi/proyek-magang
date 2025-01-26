@@ -1,0 +1,93 @@
+/* Styling untuk seluruh bagian berita terbaru */
+.latest-news {
+  padding: 20px;
+  background-color: #f9f9f9; /* Warna latar belakang */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+/* Judul berita */
+.latest-news h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Kontainer untuk kartu berita */
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Agar kartu berita dapat memuat beberapa baris */
+  gap: 15px; /* Jarak antar kartu */
+  justify-content: center; /* Rata tengah */
+}
+
+/* Gaya untuk setiap kartu berita */
+.card-container .news-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Agar gambar tidak keluar */
+  width: 280px; /* Lebar tetap untuk kartu */
+  text-align: left; /* Rata kiri */
+}
+
+/* Gambar di dalam kartu berita */
+.card-container .news-card img {
+  width: 100%;
+  height: 180px; /* Tinggi tetap untuk gambar */
+  object-fit: cover; /* Potong gambar sesuai ukuran kartu */
+}
+
+/* Judul berita dalam kartu */
+.card-container .news-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+  color: #444;
+}
+
+/* Tanggal berita */
+.card-container .news-card p {
+  font-size: 14px;
+  color: #888;
+  margin: 10px;
+}
+
+/* Hover efek untuk kartu berita */
+.card-container .news-card:hover {
+  transform: scale(1.05); /* Membesar saat hover */
+  transition: transform 0.3s ease;
+}
+
+.swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center !important; /* Pusatkan konten slide */
+  align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000 !important; /* Ubah warna tombol jika diperlukan */
+  z-index: 10; /* Pastikan tombol berada di atas slide */
+}
+
+.swiper-button-next {
+  right: 10px; /* Geser tombol ke kiri sedikit */
+}
+
+.swiper-button-prev {
+  left: 10px; /* Geser tombol ke kanan sedikit */
+}
+
+.card-container {
+  max-width: 90%; /* Kurangi lebar untuk mencegah tabrakan */
+  margin: auto; /* Pusatkan container */
+}
