@@ -1,0 +1,9 @@
+.custom-footer {
+  display: block; /* Pastikan elemen tampil */
+  position: relative;
+  width: 100%;
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}

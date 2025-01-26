@@ -1,0 +1,133 @@
+/* Dashboard.css */
+
+/* Container utama untuk seluruh dashboard */
+.dashboard-container {
+  display: flex;
+  flex-direction: column; /* Header dan footer tetap vertikal */
+  height: 100vh;
+}
+
+/* Header styling */
+.dashboard-header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-weight: bold;
+}
+
+.header-user {
+  font-style: italic;
+}
+
+/* Kontainer utama untuk sidebar dan konten */
+.edit-content {
+  display: flex; /* Membagi sidebar dan konten secara horizontal */
+  flex: 1; /* Ambil sisa ruang yang ada */
+  overflow: hidden; /* Pastikan tidak ada scroll horizontal */
+}
+
+/* Sidebar styling */
+.dashboard-sidebar {
+  width: 20%; /* Atur lebar sidebar */
+  background-color: #34495e;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dashboard-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dashboard-sidebar ul li {
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.logout-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: auto; /* Letakkan tombol logout di bagian bawah */
+  align-self: center;
+}
+
+/* Konten utama styling */
+.dashboard-main {
+  flex: 1; /* Ambil sisa ruang di sebelah kanan */
+  background-color: #ecf0f1;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto; /* Aktifkan scroll untuk konten jika diperlukan */
+}
+
+.dashboard-main h1 {
+  margin-top: 0;
+}
+
+.action-buttons {
+  margin-top: 20px;
+}
+
+.create-button, .edit-button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.create-button {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.edit-button {
+  background-color: #f1c40f;
+  color: white;
+}
+
+/* Form styling */
+.news-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.news-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.news-form input,
+.news-form textarea,
+.news-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Footer styling */
+.dashboard-footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 14px;
+}

@@ -1,0 +1,144 @@
+/* Container Utama */
+.news-detail-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.news-detail-content {
+  margin: 20px 100px;
+}
+
+/* Tanggal Berita */
+.news-date {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Judul Berita */
+.news-title {
+  font-family: "crimson text";
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #004085;
+}
+
+/* Gambar Berita */
+.news-image img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+/* Konten Berita */
+.news-content {
+  font-size: 20px;
+  font-family: crimson text;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+/* Bagikan */
+.news-social p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Ikon Sosial Media */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.social-icons i {
+  font-size: 24px;
+}
+
+/* Bagian Berita Lainnya */
+.related-news {
+  margin-top: 40px;
+}
+
+.related-news h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.related-news-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.related-news-card {
+  width: 30%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #333;
+  transition: box-shadow 0.3s ease;
+}
+
+.related-news-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.related-news-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.related-news-content {
+  padding: 10px;
+}
+
+.related-news-date {
+  font-size: 12px;
+  color: #888;
+}
+
+.related-news-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Tombol Semua Berita */
+.button-all-news {
+  display: block;
+  width: 200px;
+  text-align: center;
+  background-color: #004085;
+  color: #fff;
+  padding: 10px 0;
+  margin: 30px auto 0;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button-all-news:hover {
+  background-color: #003366;
+}

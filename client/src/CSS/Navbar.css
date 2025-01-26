@@ -1,0 +1,341 @@
+/* Reset dan Box Sizing */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  margin: 1rem;
+  text-align: center;
+}
+
+
+/* Mengatur posisi teks */
+.navbar-text {
+  font-size: 14px; /* Sesuaikan agar tidak terlalu besar */
+  line-height: 1.2; /* Atur jarak antar baris */
+  white-space: nowrap; /* Paksa teks tetap dalam 1 baris */
+}
+
+/* Khusus untuk tulisan "DBS GI" */
+.text-dbs {
+  text-align: left; /* Rata kiri */
+  display: block; /* Pastikan properti ini ada agar gaya diterapkan */
+  font-size: 20px; /* Ukuran teks */
+  font-weight: bold; /* Menonjolkan DBS GI */
+}
+
+/* Navbar Utama */
+.nav {
+  position: fixed; /* Navbar tetap di atas */
+  top: 0;          /* Tempelkan pada bagian atas layar */
+  width: 100%;     /* Pastikan melebar sepanjang layar */
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 1rem;
+  padding: 0px 80px 0px 80px !important;
+  z-index: 1000; /* Pastikan navbar di atas elemen lainnya */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan agar terlihat */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: large;
+  color: #133E87 !important;
+  flex-direction: row;
+}
+
+.site-title {
+  font-size: 50px;
+}
+
+.nav ul {
+  padding: 0 0rem;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 0px;
+}
+
+.nav a {
+  color: inherit;
+  font-family: Crimson Text;
+  text-decoration: none;
+  font-size: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 3px 0;
+}
+
+.nav a nav-menu {
+  font-family: Crimson Text !important;
+  font-size: 70px !important;
+}
+
+.nav li.active {
+  background-color: #133E87;
+  color: white;
+}
+
+.nav li:hover {
+  background-color: #133E87;
+  color: #FFFFFF;
+}
+
+/* CSS untuk ikon search */
+.c-search {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 24px 20px 24px 100px; 
+  position: relative;
+}
+
+/* Container search box */
+.search-box {
+  position: absolute; /* Membuat posisi kotak melayang */
+  top: 100%; /* Agar muncul tepat di bawah ikon */
+  right: 5%; /* Menempel ke kanan */
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Pastikan muncul di atas elemen lain */
+}
+
+/* Styling form */
+.search-box form {
+  display: flex; /* Menjadikan input dan button sejajar */
+  gap: 5px; /* Jarak antar elemen */
+}
+
+/* Input search */
+.search-input {
+  width: 200px; /* Atur lebar input */
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Button search */
+.search-button {
+  background-color: #133E87;
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+/* Dropdown Utama */
+.nav-item .dropdown-menu {
+  display:list-item;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px); /* Naik sedikit sebelum muncul */
+  position: absolute;
+  font-size: 20px;
+  left: 50%;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  z-index: 10;
+  min-width: 200px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-item:hover > .dropdown-menu {
+  color: black;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0); /* Menurun perlahan */
+}
+
+/* Sub-dropdown */
+.nav-item .sub-dropdown-menu {
+  display: list-item;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-10px); /* Bergeser sedikit ke kiri */
+  position: absolute;
+  top: 50%; /* Muncul tepat di sebelah kanan parent */
+  left: 100%;
+  border-radius: 5px;
+  color: black !important;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  z-index: 10;
+  min-width: 300px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-item .sub-dropdown:hover > .sub-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0); /* Kembali ke posisi normal */
+  color:#FFFFFF;
+}
+
+/* Dropdown Items */
+.nav-item .dropdown-menu li,
+.nav-item .sub-dropdown-menu li {
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+}
+
+.nav-item .dropdown-menu li a,
+.nav-item .sub-dropdown-menu li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.nav-item .dropdown-menu li:hover,
+.nav-item .sub-dropdown-menu li:hover {
+  color:black !important;
+  background-color: #f0f0f0; /* Highlight saat hover */
+}
+
+/* Description menu */
+.description-menu {
+  display: none; /* Awalnya disembunyikan */
+  padding-left: 10px;
+}
+
+.nav-item .sub-dropdown-menu li:hover .description-menu {
+  display: block; /* Menampilkan deskripsi saat hover */
+}
+
+/*IKON*/
+nav .menu {
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+  cursor: "pointer";
+}
+
+nav .menu span {
+  height: 0.4rem;
+  width: 100%;
+  background-color: #133E87 !important;
+  border-radius: 0.2rem;
+}
+
+/*ATUR RESPONSIF*/
+
+/* Atur responsif */
+@media screen and (max-width: 1170px) {
+  ul {
+    visibility: hidden; /* Awalnya sembunyikan menu */
+    flex-direction: column;
+    position: absolute;
+    top: 69px;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  nav.nav {
+    min-height: 78px;
+  }
+
+  .nav-item .dropdown-menu {
+    display:list-item;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px); /* Naik sedikit sebelum muncul */
+    position: absolute;
+    left: 5%;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    z-index: 10;
+    max-width: 400px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-size: 17px;
+  }
+
+  .nav-item .sub-dropdown-menu {
+    display: list-item;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-20px); /* Bergeser sedikit ke kiri */
+    position: absolute;
+    top: 50%; /* Muncul tepat di sebelah kanan parent */
+    left: 100%;
+    border-radius: 5px;
+    color: black !important;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    z-index: 10;
+    min-width: 300px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  ul.open {
+    visibility: visible; /* Menampilkan menu saat class 'open' ditambahkan */
+    width:100%;
+  }
+
+  /* Ikon hamburger */
+  nav .menu {
+    display: flex;
+    margin-right: 100px;
+    margin-top: 10px;
+  }
+
+  li:hover {
+    background-color: white;
+  }
+
+  .nav-menu {
+    padding: 0 0 0 50px;
+    font-size: 27px;
+  }
+
+  /* Container search box */
+.search-box {
+  position: flex; /* Membuat posisi kotak melayang */
+  top: 70%; /* Agar muncul tepat di bawah ikon */
+  left: 30%; /* Menempel ke kanan */
+  right: 20%;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Pastikan muncul di atas elemen lain */
+}
+/* Input search */
+.search-input {
+  width: 500px; /* Atur lebar input */
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+
+}
+
+
+

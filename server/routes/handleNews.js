@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { NewsPosts } = require('../models'); // Gunakan nama model yang benar
+const { NewsPosts } = require('../models');
 console.log(NewsPosts);
 // GET semua berita
 router.get('/', async (req, res) => {
