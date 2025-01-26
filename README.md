@@ -12,6 +12,6 @@
 4. Jalankan aplikasi
    npm start
 
-🗂 Database Setup
+## 🗂 Database Setup
 Import file SQL yang tersedia di folder database/ ke MySQL Workbench atau gunakan perintah:
   mysql -u root -p database_name < database.sql
