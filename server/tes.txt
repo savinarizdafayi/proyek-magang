@@ -1,0 +1,355 @@
+import React from "react";
+import workerImage from "../photos/worker.jpg";
+import "../CSS/Services.css"; // Pastikan file CSS-nya sesuai
+
+const Services = () => {
+  window.scrollTo(0, 0);
+  return (
+    <div>
+      {/* Hero Section */}
+      <header className="hero-section">
+        <div className="hero-text">
+          <h1>Layanan Kami</h1>
+        </div>
+      </header>
+
+      {/* Services Section */}
+      <section className="services-section">
+        <div className="service-item">
+          <h2 style={{fontWeight:"bold"}}>A. Analisis Bisnis</h2>
+          <p>
+            Kami memahami bahwa setiap keputusan bisnis memerlukan dasar yang kuat dan data yang
+            akurat. Oleh karena itu, layanan analisis bisnis kami dirancang untuk membantu perusahaan Anda
+            menggali peluang dan mengidentifikasi tantangan yang mungkin tidak terlihat. Melalui pendekatan
+            berbasis data, kami memberikan gambaran komprehensif tentang kondisi bisnis Anda saat ini.
+          </p>
+          <div className="service-image">
+            <img src={workerImage} alt="Analisis Bisnis" />
+          </div>
+          <p>
+            Dengan analisis mendalam ini, perusahaan Anda akan lebih siap dalam merencanakan langkah-langkah
+            strategis ke depan. Kami meninjau berbagai aspek mulai dari performa operasional hingga tren pasar
+            yang relevan. Dengan begitu, Anda dapat lebih fokus pada area yang memiliki potensi besar untuk
+            dikembangkan. Kami menyediakan wawasan yang dapat diandalkan untuk mendukung pertumbuhan jangka
+            panjang. Layanan kami memastikan Anda membuat keputusan bisnis yang lebih baik dan tepat sasaran,
+            memberikan perusahaan Anda keunggulan dalam persaingan yang dinamis.
+          </p>
+        </div>
+
+
+        <div className="service-item">
+          <h2 style={{fontWeight:"bold"}}>B. Pengembangan Strategi Bisnis</h2>
+          <p>
+          Tim kami berdedikasi untuk membantu Anda merumuskan strategi bisnis yang tidak hanya relevan, tetapi juga dapat diimplementasikan dengan mudah. Kami memulai dengan memahami visi dan misi perusahaan Anda, serta tantangan dan peluang yang Anda hadapi. Dari sini, kami menyusun pendekatan yang paling efektif untuk mencapai tujuan Anda.
+          </p>
+          <div className="service-image">
+            <img src={workerImage} alt="Analisis Bisnis" />
+          </div>
+          <p>
+          Fokus kami adalah menciptakan strategi yang inovatif dan berkelanjutan. Kami mempertimbangkan perkembangan pasar, kebutuhan konsumen, serta tren teknologi terbaru untuk merancang strategi yang unggul. Pendekatan kami menggabungkan kreativitas dengan analisis kritis untuk memberikan solusi yang relevan di tengah perubahan pasar yang cepat. Kami juga memastikan setiap strategi yang kami rancang dapat disesuaikan dan diadaptasi dengan mudah. Melalui kolaborasi intensif, kami memberikan dukungan yang Anda butuhkan untuk mengimplementasikan strategi dengan sukses dan mencapai hasil yang signifikan.
+          </p>
+        </div>
+
+
+        <div className="service-item">
+          <h2 style={{fontWeight:"bold"}}>C. Manajemen Resiko</h2>
+          <p>
+          Dalam lingkungan bisnis yang penuh ketidakpastian, penting bagi perusahaan Anda untuk memiliki sistem manajemen risiko yang tangguh. Layanan kami dirancang untuk membantu Anda meminimalkan potensi ancaman dan memastikan kelancaran operasional. Kami menganalisis berbagai jenis risiko, baik dari aspek internal maupun eksternal, yang dapat mempengaruhi bisnis Anda.
+          </p>
+          <div className="service-image">
+            <img src={workerImage} alt="Analisis Bisnis" />
+          </div>
+          <p>
+          Kami bekerja sama dengan Anda untuk mengidentifikasi area kritis yang memerlukan perhatian khusus. Dengan pendekatan yang proaktif, kami membantu Anda merancang rencana mitigasi risiko yang efisien dan terstruktur. Tujuannya adalah agar Anda dapat lebih fokus pada pengembangan bisnis tanpa khawatir akan ancaman yang tidak diinginkan. Selain itu, layanan kami mencakup pemantauan risiko secara berkelanjutan untuk menjaga perusahaan Anda tetap siap menghadapi perubahan. Dengan manajemen risiko yang terintegrasi, perusahaan Anda akan lebih kuat, fleksibel, dan siap menghadapi berbagai tantangan di masa depan.
+          </p>
+        </div>
+
+
+        <div className="service-item">
+          <h2 style={{fontWeight:"bold"}}>D. Optimalisasi Operasional</h2>
+          <p>
+            Kami memahami bahwa setiap keputusan bisnis memerlukan dasar yang kuat dan data yang
+            akurat. Oleh karena itu, layanan analisis bisnis kami dirancang untuk membantu perusahaan Anda
+            menggali peluang dan mengidentifikasi tantangan yang mungkin tidak terlihat. Melalui pendekatan
+            berbasis data, kami memberikan gambaran komprehensif tentang kondisi bisnis Anda saat ini.
+          </p>
+          <div className="service-image">
+            <img src={workerImage} alt="Analisis Bisnis" />
+          </div>
+          <p>
+            Dengan analisis mendalam ini, perusahaan Anda akan lebih siap dalam merencanakan langkah-langkah
+            strategis ke depan. Kami meninjau berbagai aspek mulai dari performa operasional hingga tren pasar
+            yang relevan. Dengan begitu, Anda dapat lebih fokus pada area yang memiliki potensi besar untuk
+            dikembangkan. Kami menyediakan wawasan yang dapat diandalkan untuk mendukung pertumbuhan jangka
+            panjang. Layanan kami memastikan Anda membuat keputusan bisnis yang lebih baik dan tepat sasaran,
+            memberikan perusahaan Anda keunggulan dalam persaingan yang dinamis.
+          </p>
+        </div>
+      </section>
+      </div>
+  );
+};
+
+export default Services;
+
+
+.services-section {
+  padding: 50px 100px; /* Menambahkan padding kanan dan kiri sebesar 100px */
+  max-width: 1100px; /* Lebar maksimum keseluruhan */
+  margin: auto; /* Pusatkan kontainer layanan */
+  font-family: "crimson text";
+  justify-content: space-between;
+}
+
+.service-item {
+  text-align: justify;
+  margin-bottom: 70px;
+  line-height: 1.8;
+}
+
+.service-item h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #222;
+  font-weight: "bold" !important;
+}
+
+.service-item p {
+  font-size: 20px;
+  margin-bottom: 10px;
+
+}
+
+.service-image {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.service-image img {
+  width: 100%; /* Gambar menyesuaikan lebar kontainer teks */
+  max-height: 300px; /* Batasi tinggi maksimum gambar */
+  object-fit: cover; /* Gambar terisi dengan baik */
+  border-radius: 8px; /* Membuat sudut gambar melengkung */
+}
+
+
+ABOUT
+import React from "react";
+import workerImage from "../photos/worker.jpg"
+import "../CSS/About.css"; // Pastikan file CSS-nya sesuai
+
+const About = () => {
+  return (
+    <div>
+      {/* Hero Section */}
+      <header className="hero-section">
+        <div className="hero-text">
+          <h1>Tentang Kami</h1>
+        </div>
+      </header>
+
+      {/* About Section */}
+      <div className="about-container">
+      <section className="about-section">
+        <div className="content">
+          <div className="text">
+            <h2>Tentang Kami</h2>
+            <p style={{paddingRight: "50px"}}>
+            Selamat datang di DBS GI PT Surveyor Indonesia! Kami adalah tim profesional yang berfokus pada pengembangan strategi bisnis dan inovasi, mendukung perusahaan dalam mencapai tujuan dengan layanan yang berbasis data dan wawasan mendalam. Sebagai bagian dari PT Surveyor Indonesia, DBS GI memiliki komitmen untuk membantu perusahaan mengambil langkah maju yang strategis.
+            </p>
+          </div>
+          <div className="image">
+            <img
+              src={workerImage}
+              alt="Worker"
+              className="about-image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="about-section">
+        <div className="content">
+          <div className="text" style={{maxWidth:"1000px"}}>
+            <h2 style={{paddingLeft:"50px", textAlign:"right"}}>Visi Kami</h2>
+            <p style={{paddingLeft:"50px", textAlign:"right"}}>
+              Menjadi mitra terpercaya dalam pengembangan strategi bisnis yang unggul di Indonesia, mendukung berbagai sektor industri dengan solusi yang dapat diandalkan, relevan, dan berdampak jangka panjang.
+            </p>
+          </div>
+          <div className="image">
+            <img
+              src={workerImage}
+              alt="Worker"
+              className="about-image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="about-section">
+        <div className="content">
+          <div className="text">
+            <h2>Misi Kami</h2>
+            <p style={{marginRight:"50px"}}>
+            Misi kami adalah menyediakan layanan strategi bisnis dan analisis yang memberdayakan perusahaan untuk menghadapi tantangan, meningkatkan efisiensi, dan meraih keunggulan kompetitif. Kami percaya bahwa dengan pendekatan yang kolaboratif dan berbasis data, kami dapat membantu perusahaan berkembang dengan cara yang berkelanjutan dan inovatif.
+            </p>
+          </div>
+          <div className="image">
+            <img
+              src={workerImage}
+              alt="Worker"
+              className="about-image"
+            />
+          </div>
+        </div>
+      </section>
+      </div>
+    </div>
+  );
+};
+
+export default About;
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Container */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 0;
+  margin: 150px 0 150px 0;
+}
+
+/* Each Section */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.about-section:nth-child(odd) .content {
+  flex-direction: row-reverse; /* Balik arah untuk section ganjil */
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
+
+/* Text Styling */
+.text {
+  flex: 1;
+  max-width: 65%; /* Maksimal 50% lebar teks */
+}
+
+.text h2 {
+  font-family: crimson text;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.text p {
+  font-family: alice;
+  font-size: 18px;
+  color: #555;
+  text-align: justify;
+}
+
+/* Image Styling */
+.image {
+  flex: 1;
+  max-width: 35%;
+  overflow: hidden; /* Potong area gambar yang berlebih */
+}
+
+.about-image {
+  width: 100%; /* Lebar penuh */
+  height: 200px; /* Atur tinggi gambar */
+  object-fit: cover; /* Crop gambar menjadi persegi panjang horizontal */
+  border-radius: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+  }
+
+  .content {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .text,
+  .image {
+    max-width: 100%;
+  }
+}
+
+tambahan navbar
+  const [menuOpen, setMenuOpen] = useState(false);
+
+      <div className="burger-menu" onClick={() => setMenuOpen(!menuOpen)}>
+        {/* Burger Icon */}
+        <i className={`bi ${menuOpen ? "bi-x" : "bi-list"}`}></i>
+      </div>
+      <ul className={`menu ${menuOpen ? "open" : ""}`}>
+        <CustomLink to="/">Home</CustomLink>
+        <CustomLink to="/Services">Layanan</CustomLink>
+        <CustomLink to="/News">Berita</CustomLink>
+        <CustomLink to="/About">Tentang Kami</CustomLink>
+      </ul>
+      <i className="bi bi-search c-search" onClick={() => setShowSearch(!showSearch)}></i>
+      {showSearch && (
+        <div className="search-box" ref={searchRef}>
+          <form onSubmit={handleSearchSubmit}>
+            <input
+              type="text"
+              placeholder="Cari di Website DBS GI..."
+              className="search-input"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+            <button type="submit" className="search-button">Cari</button>
+          </form>
+        </div>
+      )}
+
+
+      CSS
+      /* Burger menu */
+.burger-menu {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.menu.open {
+  display: block;
+}
